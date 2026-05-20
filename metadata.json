@@ -1,0 +1,11 @@
+{
+  "name": "Remix: FRAME TO FIT SCAN",
+  "description": "Powered by J3R SYSTEMS. Advanced face shape analysis to find your perfect glasses.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "AI Image Analysis",
+    "Style Recommendations"
+  ]
+}

@@ -1,0 +1,93 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1200" fill="#050505"/>
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Scan lines background -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5" stroke-opacity="0.05"/>
+  </pattern>
+  <rect width="800" height="1200" fill="url(#grid)" />
+
+  <!-- Header -->
+  <text x="40" y="80" font-family="Arial Black" font-size="12" fill="#3b82f6" letter-spacing="4" opacity="0.8">CELEBRITIES WITH</text>
+  <text x="40" y="160" font-family="Arial Black" font-size="80" fill="white" letter-spacing="-2">OVAL</text>
+  <text x="40" y="210" font-family="Arial Black" font-size="40" fill="#3b82f6" letter-spacing="1">FACE SHAPES</text>
+  
+  <rect x="40" y="240" width="120" height="2" fill="#3b82f6" opacity="0.3"/>
+  <text x="40" y="270" font-family="Arial" font-size="14" fill="white" opacity="0.6">Soft curves. Balanced proportions. Timeless style.</text>
+
+  <!-- Celebrity Images (Placeholders in SVG) -->
+  <g transform="translate(40, 320)">
+    <rect width="170" height="220" rx="10" fill="#111" stroke="#3b82f6" stroke-opacity="0.2"/>
+    <text x="85" y="240" font-family="Arial" font-size="10" fill="white" text-anchor="middle" opacity="0.8">BEYONCÉ</text>
+    <rect x="185" width="170" height="220" rx="10" fill="#111" stroke="#3b82f6" stroke-opacity="0.2"/>
+    <text x="270" y="240" font-family="Arial" font-size="10" fill="white" text-anchor="middle" opacity="0.8">CHARLIZE THERON</text>
+    <rect x="370" width="170" height="220" rx="10" fill="#111" stroke="#3b82f6" stroke-opacity="0.2"/>
+    <text x="455" y="240" font-family="Arial" font-size="10" fill="white" text-anchor="middle" opacity="0.8">JASON STATHAM</text>
+    <rect x="555" width="170" height="220" rx="10" fill="#111" stroke="#3b82f6" stroke-opacity="0.2"/>
+    <text x="640" y="240" font-family="Arial" font-size="10" fill="white" text-anchor="middle" opacity="0.8">MICHAEL B. JORDAN</text>
+  </g>
+
+  <!-- Analysis Section -->
+  <g transform="translate(40, 620)">
+    <rect width="340" height="400" rx="20" fill="url(#blueGrad)" stroke="white" stroke-opacity="0.1"/>
+    <text x="20" y="40" font-family="Arial Black" font-size="24" fill="white">OVAL FACE SHAPE</text>
+    <text x="20" y="80" font-family="Arial" font-size="14" fill="white" opacity="0.7">
+      <tspan x="20" dy="0">Oval face shapes are characterized by</tspan>
+      <tspan x="20" dy="20">the overall balance in facial proportions.</tspan>
+      <tspan x="20" dy="20">Typically, an oval face will have a small</tspan>
+      <tspan x="20" dy="20">forehead, prominent cheekbones, and</tspan>
+      <tspan x="20" dy="20">a thin jawline.</tspan>
+    </text>
+    
+    <!-- Face Diagram -->
+    <ellipse cx="170" cy="280" rx="60" ry="80" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 2" filter="url(#glow)"/>
+    <path d="M140,240 Q170,230 200,240" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
+    <circle cx="150" cy="270" r="2" fill="#3b82f6"/>
+    <circle cx="190" cy="270" r="2" fill="#3b82f6"/>
+    <path d="M150,320 Q170,330 190,320" fill="none" stroke="#3b82f6" stroke-width="1"/>
+  </g>
+
+  <!-- Recommendations Section -->
+  <g transform="translate(420, 620)">
+    <text x="0" y="20" font-family="Arial Black" font-size="18" fill="white" letter-spacing="2">RECOMMENDED FRAMES</text>
+    
+    <text x="0" y="60" font-family="Arial" font-size="10" fill="#3b82f6" letter-spacing="2">FOR WOMEN</text>
+    <rect x="0" y="70" width="340" height="60" rx="10" fill="white" fill-opacity="0.05"/>
+    <text x="10" y="105" font-family="Arial" font-size="12" fill="white">Rectangle, Square, Round, Aviator</text>
+
+    <text x="0" y="180" font-family="Arial" font-size="10" fill="#3b82f6" letter-spacing="2">FOR MEN</text>
+    <rect x="0" y="190" width="340" height="60" rx="10" fill="white" fill-opacity="0.05"/>
+    <text x="10" y="225" font-family="Arial" font-size="12" fill="white">Rectangle, Square, Browline</text>
+
+    <text x="0" y="300" font-family="Arial" font-size="10" fill="white" opacity="0.4" letter-spacing="2">NOT RECOMMENDED</text>
+    <rect x="0" y="310" width="340" height="60" rx="10" fill="white" fill-opacity="0.03"/>
+    <text x="10" y="345" font-family="Arial" font-size="12" fill="white" opacity="0.5">Oversized</text>
+  </g>
+
+  <!-- Frame Guidance -->
+  <g transform="translate(40, 1050)">
+    <text x="0" y="0" font-family="Arial Black" font-size="18" fill="white" letter-spacing="2">FRAME GUIDANCE</text>
+    <text x="0" y="30" font-family="Arial" font-size="14" fill="white" opacity="0.6">
+      <tspan x="0" dy="0">Oval faces are versatile. Aim for frames as wide as the widest part of your face.</tspan>
+      <tspan x="0" dy="20">Square and rectangular frames add structure and contrast.</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Stats -->
+  <line x1="40" y1="1150" x2="760" y2="1150" stroke="white" stroke-opacity="0.1" stroke-width="1"/>
+  <text x="40" y="1180" font-family="Arial" font-size="10" fill="#3b82f6" letter-spacing="2">BALANCE IS KEY</text>
+  <text x="760" y="1180" font-family="Arial" font-size="10" fill="white" text-anchor="end" opacity="0.4">NEURAL ANALYSIS v1.02</text>
+</svg>

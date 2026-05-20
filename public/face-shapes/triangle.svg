@@ -1,0 +1,74 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1200" fill="#050505"/>
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="1200" fill="url(#grid)" />
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5" stroke-opacity="0.05"/>
+  </pattern>
+
+  <text x="40" y="80" font-family="Arial Black" font-size="12" fill="#3b82f6" letter-spacing="4" opacity="0.8">CELEBRITIES WITH</text>
+  <text x="40" y="160" font-family="Arial Black" font-size="80" fill="white" letter-spacing="-2">TRIANGLE</text>
+  <text x="40" y="210" font-family="Arial Black" font-size="40" fill="#3b82f6" letter-spacing="1">FACE SHAPES</text>
+  
+  <text x="40" y="270" font-family="Arial" font-size="14" fill="white" opacity="0.6">Strong angles. Defined features. Iconic style.</text>
+
+  <g transform="translate(40, 320)">
+    <rect width="170" height="220" rx="10" fill="#111" stroke="#3b82f6" stroke-opacity="0.2"/>
+    <text x="85" y="240" font-family="Arial" font-size="10" fill="white" text-anchor="middle" opacity="0.8">TIFFANI THIESSEN</text>
+    <rect x="185" width="170" height="220" rx="10" fill="#111" stroke="#3b82f6" stroke-opacity="0.2"/>
+    <text x="270" y="240" font-family="Arial" font-size="10" fill="white" text-anchor="middle" opacity="0.8">KELLI OSBOURNE</text>
+    <rect x="370" width="170" height="220" rx="10" fill="#111" stroke="#3b82f6" stroke-opacity="0.2"/>
+    <text x="455" y="240" font-family="Arial" font-size="10" fill="white" text-anchor="middle" opacity="0.8">ROBERT PATTINSON</text>
+    <rect x="555" width="170" height="220" rx="10" fill="#111" stroke="#3b82f6" stroke-opacity="0.2"/>
+    <text x="640" y="240" font-family="Arial" font-size="10" fill="white" text-anchor="middle" opacity="0.8">FINN WOLFHARD</text>
+  </g>
+
+  <g transform="translate(40, 620)">
+    <rect width="340" height="400" rx="20" fill="url(#blueGrad)" stroke="white" stroke-opacity="0.1"/>
+    <text x="20" y="40" font-family="Arial Black" font-size="24" fill="white">TRIANGLE FACE SHAPE</text>
+    <text x="20" y="80" font-family="Arial" font-size="14" fill="white" opacity="0.7">
+      <tspan x="20" dy="0">Typically has a narrow forehead and</tspan>
+      <tspan x="20" dy="20">is widest around the jaw. The face</tspan>
+      <tspan x="20" dy="20">creates a triangular shape with the</tspan>
+      <tspan x="20" dy="20">base down at the jawline.</tspan>
+    </text>
+    
+    <!-- Triangle Diagram -->
+    <path d="M170,220 L110,340 L230,340 Z" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 2" filter="url(#glow)"/>
+    <circle cx="170" cy="220" r="4" fill="white"/>
+  </g>
+
+  <g transform="translate(420, 620)">
+    <text x="0" y="20" font-family="Arial Black" font-size="18" fill="white" letter-spacing="2">RECOMMENDED FRAMES</text>
+    <text x="0" y="60" font-family="Arial" font-size="10" fill="#3b82f6" letter-spacing="2">FOR WOMEN/MEN</text>
+    <rect x="0" y="70" width="340" height="100" rx="10" fill="white" fill-opacity="0.05"/>
+    <text x="10" y="105" font-family="Arial" font-size="12" fill="white">Browline, Oval, Aviator</text>
+    
+    <text x="0" y="220" font-family="Arial" font-size="10" fill="white" opacity="0.4" letter-spacing="2">NOT RECOMMENDED</text>
+    <rect x="0" y="230" width="340" height="60" rx="10" fill="white" fill-opacity="0.03"/>
+    <text x="10" y="265" font-family="Arial" font-size="12" fill="white" opacity="0.5">Square</text>
+  </g>
+
+  <g transform="translate(40, 1050)">
+    <text x="0" y="0" font-family="Arial Black" font-size="18" fill="white" letter-spacing="2">FRAME GUIDANCE</text>
+    <text x="0" y="30" font-family="Arial" font-size="14" fill="white" opacity="0.6">
+      <tspan x="0" dy="0">Mirror the shape using frames with heavy accents at the top</tspan>
+      <tspan x="0" dy="20">and lighter features at the bottom (e.g., Browline).</tspan>
+    </text>
+  </g>
+
+  <text x="40" y="1180" font-family="Arial" font-size="10" fill="#3b82f6" letter-spacing="2">BALANCE IS KEY</text>
+</svg>

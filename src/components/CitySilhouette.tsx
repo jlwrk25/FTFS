@@ -1,0 +1,24 @@
+import React from 'react';
+
+const CitySilhouette: React.FC = () => {
+  return (
+    <div className="fixed bottom-0 left-0 w-full h-1/2 pointer-events-none z-0 overflow-hidden">
+      <svg viewBox="0 0 1440 300" preserveAspectRatio="none" className="w-full h-full">
+        {/* Back layer */}
+        <path d="M0,300 L0,220 L40,220 L40,240 L80,240 L80,180 L120,180 L120,220 L160,220 L160,140 L200,140 L200,200 L240,200 L240,250 L280,250 L280,160 L320,160 L320,230 L360,230 L360,100 L400,100 L400,180 L440,180 L440,240 L480,240 L480,120 L520,120 L520,210 L560,210 L560,250 L600,250 L600,140 L640,140 L640,220 L680,220 L680,180 L720,180 L720,240 L760,240 L760,110 L800,110 L800,200 L840,200 L840,260 L880,260 L880,150 L920,150 L920,230 L960,230 L960,90 L1000,90 L1000,190 L1040,190 L1040,250 L1080,250 L1080,130 L1120,130 L1120,220 L1160,220 L1160,180 L1200,180 L1200,240 L1240,240 L1240,115 L1280,115 L1280,210 L1320,210 L1320,260 L1360,260 L1360,145 L1400,145 L1400,225 L1440,225 L1440,300 Z" fill="#0A0A12" />
+        {/* Middle layer */}
+        <path d="M0,300 L0,250 L50,250 L50,270 L100,270 L100,230 L150,230 L150,260 L200,260 L200,210 L250,210 L250,270 L300,270 L300,190 L350,190 L350,250 L400,250 L400,280 L450,280 L450,220 L500,220 L500,260 L550,260 L550,200 L600,200 L600,270 L650,270 L650,235 L700,235 L700,260 L750,260 L750,215 L800,215 L800,275 L850,275 L850,240 L900,240 L900,265 L950,265 L950,225 L1000,225 L1000,270 L1050,270 L1050,210 L1100,210 L1100,255 L1150,255 L1150,230 L1200,230 L1200,275 L1250,275 L1250,220 L1300,220 L1300,260 L1350,260 L1350,245 L1400,245 L1400,275 L1440,275 L1440,300 Z" fill="#0C0C18" />
+        {/* Subtle Glow */}
+        <rect x="0" y="220" width="1440" height="80" fill="url(#city-glow)" />
+        <defs>
+          <linearGradient id="city-glow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#00D1FF" stopOpacity="0.1" />
+            <stop offset="100%" stopColor="transparent" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+};
+
+export default CitySilhouette;
